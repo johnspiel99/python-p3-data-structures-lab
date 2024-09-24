@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
-from data_structures import get_names, get_spiciest_foods, print_spicy_foods,\
+from data_structures import get_names, get_spiciest_foods, print_spicy_foods, \
                                 create_spicy_food, get_spicy_food_by_cuisine, \
-                                print_spiciest_foods, get_average_heat_level
+                                print_spiciest_foods, average_heat_level
+
+
 
 import io
 import sys
@@ -65,8 +67,8 @@ class TestDataStructures:
             "Mapo Tofu (Sichuan) | Heat Level: 🌶🌶🌶🌶🌶🌶\n")
 
     def test_get_average_heat_level(self):
-        '''contains function get_average_heat_level that returns average of heat_levels in spicy_foods.'''
-        assert(get_average_heat_level(TestDataStructures.SPICY_FOODS) == 6)
+        '''contains function average_heat_level that returns average of heat_levels in spicy_foods.'''
+        assert(average_heat_level(TestDataStructures.SPICY_FOODS) == 6)
 
     def test_create_spicy_food(self):
         '''contains function create_spicy_food that returns original list of spicy_foods with new spicy_food added.'''
